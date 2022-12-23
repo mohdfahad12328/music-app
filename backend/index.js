@@ -9,7 +9,7 @@ dotenv_1.default.config({ path: "../.env" });
 const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.get('/', (req, res) => {
-    res.send('<h1>Hello World</h1>');
+    res.send('<h1>Music App</h1>');
 });
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
