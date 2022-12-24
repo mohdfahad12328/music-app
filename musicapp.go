@@ -9,7 +9,7 @@ import (
 func main() {
 	app := fiber.New()
 	app.Get("/", indexRouteHandler)
-	log.Fatal(app.Listen(":8001"))
+	log.Fatal(app.Listen(":8000"))
 }
 
 // handlers
