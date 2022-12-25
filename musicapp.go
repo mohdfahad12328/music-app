@@ -58,7 +58,9 @@ func runHub() {
 }
 
 func main() {
-	app := fiber.New()
+	app := fiber.New(fiber.Config{
+		Network: fiber.NetworkTCP6,
+	})
 
 	app.Static("/", "./home.html")
 
