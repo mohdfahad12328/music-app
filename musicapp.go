@@ -100,7 +100,7 @@ func main() {
 		}
 	}))
 
-	addr := flag.String("addr", ":8080", "http service address")
+	addr := flag.String("addr", ":8081", "http service address")
 	flag.Parse()
 	log.Fatal(app.Listen(*addr))
 }
