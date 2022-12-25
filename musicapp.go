@@ -1,7 +1,7 @@
 package main
 
 import (
-	"flag"
+	// "flag"
 	"log"
 	"sync"
 
@@ -100,7 +100,7 @@ func main() {
 		}
 	}))
 
-	addr := flag.String("addr", ":8081", "http service address")
-	flag.Parse()
-	log.Fatal(app.Listen(*addr))
+	// addr := flag.String("addr", ":8081", "http service address")
+	// flag.Parse()
+	log.Fatal(app.Listen("[::]:3000"))
 }
